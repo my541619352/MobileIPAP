@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 23
     buildToolsVersion "21.1.2"
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.tjsinfo.mobileipap"
@@ -24,4 +25,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
     //compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.1.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.squareup.okhttp3:okhttp:3.1.2'
+    compile 'com.squareup.okio:okio:1.6.0'
+    //compile 'com.google.code.gson:gson:2.6.1'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.7.1'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.7.1'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.7.1'
 }
